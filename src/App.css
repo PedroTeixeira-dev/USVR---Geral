@@ -1,0 +1,48 @@
+.toggle {
+    width: 60px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle:before {
+    content: "";
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s ease-in-out;
+    background-color: red;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"]:checked + .toggle:before {
+    transform: translateX(30px);
+    background-color: green;
+}
+
+.card {
+    border: dotted red;
+    width: 350px;
+}
+
+.cardHeader {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.choeckBox {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    border: dotted black;
+    width: 20%;
+}
