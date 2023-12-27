@@ -1,3 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    height: 100px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.25);
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+header img {
+    margin-left: 10px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+header ul li {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
 .toggle {
     width: 60px;
     height: 30px;
@@ -30,8 +67,16 @@ input[type="checkbox"]:checked + .toggle:before {
 }
 
 .card {
-    border: dotted red;
-    width: 350px;
+    max-width: 320px;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 4px 16px 10px rgb(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.cardBody {
+    width: 90%;
+    margin: 0 auto;
 }
 
 .cardHeader {
@@ -43,6 +88,62 @@ input[type="checkbox"]:checked + .toggle:before {
     display: flex;
     margin: 0 auto;
     justify-content: center;
-    border: dotted black;
     width: 20%;
 }
+
+#plantas {
+    background-image: url(https://www.whitemartins.com.br/-/media/corporate/praxair-brazil/images/gases/hidrogenio/certificao-h2v_1400-x-868.jpg?rev=e06b79a4e93f486aacef9b1675923931&h=868&w=1400&la=pt-BR&hash=2C1D73375261C8C8A5FA3A8333BA07B0BAEA77DA);
+    background-size: cover;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    min-height: 800px;
+    height: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1024px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+}
+
+label {
+    padding-bottom: 12px;
+}
+
+h3 {
+    padding-bottom: 12px;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 25px;
+    width: 50%;
+}
+
+.infoPlantas {
+    padding-top: 28px;
+    margin: 0 auto;
+    max-width: 320px;
+    width: 100%;
+    background-color: whitesmoke;
+    box-shadow: 4px 16px 10px rgb(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.infoPlantasTitulo {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.infoPlantasItem {
+    text-align: center;
+    margin-bottom: 16px;
+    padding-bottom: 16px;
+}
+
